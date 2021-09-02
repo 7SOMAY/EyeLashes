@@ -1,0 +1,352 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.first .navbar {
+  background-color: black;
+}
+
+.first .navbar .navbar-brand {
+  margin: 0 50px 0 50px;
+}
+
+.first .navbar .navbar-brand .navlogo {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.first .navbar .collapse {
+  position: absolute;
+  right: 150px;
+}
+
+.first .navbar .collapse li {
+  margin-right: 20px;
+}
+
+.first .navbar .collapse .nav-link {
+  color: white;
+}
+
+.first .navbar .collapse .nav-link:hover {
+  color: #d8af52;
+}
+
+.first .carousel .content {
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 7%;
+  z-index: 2;
+}
+
+.first .carousel .content h1 {
+  color: black;
+  line-height: 2;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.first .carousel .content .c-btn {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-weight: 600;
+  padding: 0 70px;
+}
+
+.first .carousel .content .c-btn:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.second {
+  padding: 100px 0 0 0;
+}
+
+.second h1,
+.second h6,
+.second h4 {
+  font-weight: 400;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.second h6 {
+  margin-top: 20px;
+}
+
+.second .second-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.second .cards img {
+  width: 100%;
+  max-height: 100vh;
+}
+
+.second .cards .card-body p {
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.third {
+  width: 100%;
+  min-height: 55vh;
+  background-color: black;
+}
+
+.third .third-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.third .third-img .logo2 {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  width: 250px;
+}
+
+.third h1,
+.third h6 {
+  font-weight: 400;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+}
+
+.third .form {
+  padding: 20px 200px;
+}
+
+.third .form .c-btn {
+  background-color: #d8af52;
+  color: white;
+  border: 2px solid #d8af52;
+  font-weight: 500;
+  padding: 0 100px;
+}
+
+.third .form .c-btn:hover {
+  background-color: transparent;
+  color: #d8af52;
+}
+
+.third .form .form-control {
+  background-color: black;
+}
+
+.fourth h1 {
+  font-weight: 400;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 3px;
+  text-align: center;
+  color: black;
+}
+
+.fourth .fa-star {
+  color: #f9c600;
+}
+
+.fourth .card p {
+  line-height: 2;
+}
+
+.fifth {
+  min-height: 50vh;
+  width: 100%;
+  background-color: black;
+}
+
+.fifth .fifth-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.fifth .text {
+  width: 80%;
+}
+
+.sixth h1,
+.sixth h6 {
+  font-weight: 400;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 3px;
+  margin: auto;
+}
+
+.sixth .below-card {
+  width: 100%;
+  min-height: 40vh;
+}
+
+.sixth .below-card .form {
+  padding: 20px 200px;
+}
+
+.sixth .below-card .form .c-btn {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-weight: 500;
+  padding: 0 100px;
+}
+
+.sixth .below-card .form .c-btn:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  color: #d8af52;
+}
+
+.footer .beelogo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer i {
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .first .navbar .collapse {
+    position: unset;
+  }
+}
+
+@media (max-width: 1200px) {
+  .first .carousel .content {
+    top: 18%;
+  }
+  .first .carousel .content h1 {
+    font-size: 1.6rem;
+  }
+  .first .navbar .navbar-brand {
+    margin: 0;
+  }
+  .first .navbar .collapse {
+    position: unset;
+  }
+}
+
+@media (max-width: 400px) {
+  .first .carousel .content {
+    top: 14%;
+    left: 4%;
+  }
+  .first .carousel .content h1 {
+    font-size: 0.4rem;
+  }
+  .first .carousel .content .c-btn {
+    padding: 0 20px;
+  }
+  .second {
+    padding: 50px 0 0 0;
+  }
+  .third .form {
+    padding: 5px 5px;
+  }
+  .third .form .c-btn {
+    padding: 0 61px;
+  }
+  #BelowCard .form {
+    padding: 5px 5px;
+  }
+  #BelowCard .form .c-btn {
+    padding: 0 45px;
+  }
+  .footer .beelogo .bee {
+    width: 250px;
+  }
+  .navbar .navbar-brand .navlogo {
+    width: 190px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 550px) {
+  .first .carousel .content {
+    top: 8%;
+    left: 4%;
+  }
+  .first .carousel .content h1 {
+    font-size: 0.63rem;
+  }
+  .first .carousel .content .c-btn {
+    padding: 0 30px;
+  }
+  .second {
+    padding: 50px 0 0 0;
+  }
+  .third .form,
+  #BelowCard .form {
+    padding: 20px 25px;
+  }
+  .third .c-btn,
+  #BelowCard .c-btn {
+    padding: 0 55px;
+  }
+  .navbar .navbar-brand .navlogo {
+    width: 270px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+  .first .carousel .content {
+    top: 8%;
+    left: 4%;
+  }
+  .first .carousel .content h1 {
+    font-size: 0.95rem;
+  }
+  .first .carousel .content .c-btn {
+    padding: 0 40px;
+  }
+  .third .form,
+  #BelowCard .form {
+    padding: 20px 50px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 900px) {
+  .third .form,
+  #BelowCard .form {
+    padding: 20px 100px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .carousel .content h1 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

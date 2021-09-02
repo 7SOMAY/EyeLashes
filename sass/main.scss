@@ -1,0 +1,365 @@
+// ----------------------------------------VARIABLES------------------------------------- //
+
+$yellow: #d8af52;
+$star: #f9c600;
+$mini: 400px;
+$small: 550px;
+$mobile: 767px;
+$iPad: 900px;
+$iPadPro2: 1000px;
+$iPadPro: 1024px;
+$iPadProPlus: 1200px;
+$fullSized: 1400px;
+
+// ----------------------------------------SCSS------------------------------------------ //
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.first {
+  .navbar {
+    background-color: black;
+    .navbar-brand {
+      margin: 0 50px 0 50px;
+      .navlogo {
+        filter: brightness(120%);
+      }
+    }
+    .collapse {
+      position: absolute;
+      right: 150px;
+      li {
+        margin-right: 20px;
+      }
+      .nav-link {
+        color: white;
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+  .carousel {
+    .content {
+      text-align: left;
+      position: absolute;
+      top: 25%;
+      left: 7%;
+      z-index: 2;
+      h1 {
+        color: black;
+        line-height: 2;
+        letter-spacing: 3px;
+        font-weight: 400;
+      }
+      .c-btn {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        font-weight: 600;
+        padding: 0 70px;
+        &:hover {
+          background-color: transparent;
+          color: black;
+        }
+      }
+    }
+  }
+}
+.second {
+  padding: 100px 0 0 0;
+  h1,
+  h6,
+  h4 {
+    font-weight: 400;
+    width: fit-content;
+    margin: auto;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  h6 {
+    margin-top: 20px;
+  }
+  .second-img {
+    width: fit-content;
+    margin: auto;
+  }
+  .cards {
+    img {
+      width: 100%;
+      max-height: 100vh;
+    }
+    .card-body {
+      p {
+        letter-spacing: 1px;
+        line-height: 2;
+      }
+    }
+  }
+}
+.third {
+  width: 100%;
+  min-height: 55vh;
+  background-color: black;
+  .third-img {
+    width: fit-content;
+    .logo2 {
+      filter: brightness(120%);
+      width: 250px;
+    }
+  }
+  h1,
+  h6 {
+    font-weight: 400;
+    width: fit-content;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+  }
+  .form {
+    padding: 20px 200px;
+    .c-btn {
+      background-color: $yellow;
+      color: white;
+      border: 2px solid $yellow;
+      font-weight: 500;
+      padding: 0 100px;
+      &:hover {
+        background-color: transparent;
+        color: $yellow;
+      }
+    }
+    .form-control {
+      background-color: black;
+    }
+  }
+}
+.fourth {
+  h1 {
+    font-weight: 400;
+    width: fit-content;
+    letter-spacing: 3px;
+    text-align: center;
+    color: black;
+  }
+  .fa-star {
+    color: $star;
+  }
+  .card {
+    //   height: 400px;
+    p {
+      line-height: 2;
+    }
+  }
+}
+.fifth {
+  min-height: 50vh;
+  width: 100%;
+  background-color: black;
+  .fifth-img {
+    width: fit-content;
+  }
+  .text {
+    width: 80%;
+  }
+}
+.sixth {
+  h1,
+  h6 {
+    font-weight: 400;
+    width: fit-content;
+    letter-spacing: 3px;
+    margin: auto;
+  }
+  .below-card {
+    width: 100%;
+    min-height: 40vh;
+    .form {
+      padding: 20px 200px;
+      .c-btn {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        font-weight: 500;
+        padding: 0 100px;
+        &:hover {
+          background-color: transparent;
+          color: black;
+        }
+      }
+    }
+  }
+}
+.footer {
+  background-color: black;
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    &:hover {
+      color: $yellow;
+    }
+  }
+  .beelogo {
+    width: fit-content;
+  }
+  i {
+    cursor: pointer;
+  }
+}
+
+// ----------------------------------------MEDIA----------------------------------------- //
+
+@media (max-width: 991px) {
+  .first {
+    .navbar {
+      .collapse {
+        position: unset;
+      }
+    }
+  }
+}
+@media (max-width: $iPadProPlus) {
+  .first {
+    .carousel {
+      .content {
+        top: 18%;
+        h1 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .navbar {
+      .navbar-brand {
+        margin: 0;
+      }
+      .collapse {
+        position: unset;
+      }
+    }
+  }
+}
+@media (max-width: $mini) {
+  .first {
+    .carousel {
+      .content {
+        top: 14%;
+        left: 4%;
+        h1 {
+          font-size: 0.4rem;
+        }
+        .c-btn {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+  .second {
+    padding: 50px 0 0 0;
+  }
+  .third {
+    .form {
+      padding: 5px 5px;
+      .c-btn {
+        padding: 0 61px;
+      }
+    }
+  }
+  #BelowCard {
+    .form {
+      padding: 5px 5px;
+      .c-btn {
+        padding: 0 45px;
+      }
+    }
+  }
+  .footer {
+    .beelogo {
+      .bee {
+        width: 250px;
+      }
+    }
+  }
+  .navbar {
+    .navbar-brand {
+      .navlogo {
+        width: 190px;
+      }
+    }
+  }
+}
+@media (min-width: $mini) and (max-width: $small) {
+  .first {
+    .carousel {
+      .content {
+        top: 8%;
+        left: 4%;
+        h1 {
+          font-size: 0.63rem;
+        }
+        .c-btn {
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+  .second {
+    padding: 50px 0 0 0;
+  }
+  .third,
+  #BelowCard {
+    .form {
+      padding: 20px 25px;
+    }
+    .c-btn {
+      padding: 0 55px;
+    }
+  }
+  .navbar {
+    .navbar-brand {
+      .navlogo {
+        width: 270px;
+      }
+    }
+  }
+}
+@media (min-width: $small) and (max-width: $mobile) {
+  .first {
+    .carousel {
+      .content {
+        top: 8%;
+        left: 4%;
+        h1 {
+          font-size: 0.95rem;
+        }
+        .c-btn {
+          padding: 0 40px;
+        }
+      }
+    }
+  }
+  .third,
+  #BelowCard {
+    .form {
+      padding: 20px 50px;
+    }
+  }
+}
+@media (min-width: $mobile) and (max-width: $iPad) {
+  .third,
+  #BelowCard {
+    .form {
+      padding: 20px 100px;
+    }
+  }
+}
+@media (min-width: $iPadPro) and (max-width: $iPadProPlus) {
+  .carousel {
+    .content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
